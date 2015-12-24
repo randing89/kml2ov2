@@ -9,6 +9,11 @@ node ./index.js --in input_path.kml.xml [--out output_path]
 ```
 
 ## Library usage
+
+```
+npm install kml2vo2
+```
+
 ```
 const kml2vo2 = require('kml2vo2');
 var ov2Buffer = kml2vo2(kmlContentStringOrBuffer);
