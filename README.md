@@ -3,7 +3,7 @@ Convert Google KML file to Tomtom VO2 POI format
 
 Support convert KML exported form https://www.google.com/maps/d/ to Tomtom Mydrive .ov2 POI format
 
-## Commandline usage
+## Command line usage
 ```
 node ./index.js --in input_path.kml.xml [--out output_path]
 ```
@@ -20,7 +20,7 @@ const kml2vo2 = require('kml2vo2');
 /**
  * @typedef {OV2} OV2
  * @property name Name of the layer
- * @property content Content of ov2 file
+ * @property content Content buffer of ov2 file
  */
 /**
  * Convert KML to OV2
