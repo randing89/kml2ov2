@@ -1,6 +1,6 @@
 {
   "name": "kml2vo2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert Google KML file to Tomtom VO2 POI format",
   "main": "index.js",
   "scripts": {
