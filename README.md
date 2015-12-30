@@ -14,7 +14,19 @@ node ./index.js --in input_path.kml.xml [--out output_path]
 npm install kml2vo2
 ```
 
-```
+```javascript
 const kml2vo2 = require('kml2vo2');
-var ov2Buffer = kml2vo2(kmlContentStringOrBuffer);
+
+/**
+ * @typedef {OV2} OV2
+ * @property name Name of the layer
+ * @property content Content of ov2 file
+ */
+/**
+ * Convert KML to OV2
+ *
+ * @param json JSON representation of KML
+ * @return {OV2[]} ov2 files
+ */
+var ov2BufferArray = kml2vo2(json);
 ```

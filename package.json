@@ -11,6 +11,7 @@
   "dependencies": {
     "furkot-tomtom-ov2": "^0.1.0",
     "minimist": "^1.2.0",
+    "sanitize-filename": "^1.5.3",
     "xml2json": "^0.9.0"
   }
 }
