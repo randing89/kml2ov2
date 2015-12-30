@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 const xml2json = require('xml2json');
@@ -7,7 +9,7 @@ const argv = require('minimist')(process.argv.slice(2));
 
 // Check filename
 if (!argv.in) {
-    console.log(`Usage: node ./index.js --in input_path.kml.xml [--out output_path]`);
+    console.log(`Usage: kml2ov2 --in input_path.kml.xml [--out output_path]`);
     process.exit(0);
 }
 
@@ -19,7 +21,7 @@ if (!fs.existsSync(kmlFilePath)) {
 
 // Convert to OV2
 try {
-    convertFile(JSON.parse(xml2json.toJson((fs.readFileSync(kmlFilePath)))), path.resolve(argv.out || './'));
+    convertFile(JSON.parse(xml2json.toJson((fs.readFileSync(kmlFilePath)))), path.resolve(argv.out || path.dirname(kmlFilePath)));
 } catch (e) {
     console.error('Not a valid KML file: ' + e.message);
     process.exit(0);

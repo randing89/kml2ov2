@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Convert Google KML file to Tomtom VO2 POI format",
   "main": "index.js",
+  "bin": {
+    "kml2ov2": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
